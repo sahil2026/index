@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Sahil | Web Developer</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1b0035, #2e0b5b, #00172d);
+      background-size: 300% 300%;
+      animation: gradientMove 12s ease infinite;
+      color: #e8e8e8;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-bar li a {
+      color: #c0f7ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-bar li a:hover,
+    .nav-bar li a.active {
+      background: #00e6e6;
+      color: #0a0f24;
+      box-shadow: 0 0 12px #00e6e680;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.08);
+      animation: fadeIn 1.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      color: #00d9ff;
+      margin-bottom: 30px;
+      text-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.9;
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      color: #00e6e6;
+      font-weight: bold;
+    }
+
+    /* Buttons */
+    .btn-group {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      margin: 12px;
+      background: #00e6e6;
+      color: #10132c;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 18px #00e6e680;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff;
+    }
+
+    /* Skills */
+    .skills {
+      margin-top: 60px;
+    }
+
+    .skills h2 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      background: #111729;
+      border: 1px solid #00e6e6;
+      color: #00e6e6;
+      padding: 10px 22px;
+      border-radius: 25px;
+      font-weight: 600;
+      box-shadow: 0 0 10px #00e6e660;
+      transition: transform 0.2s ease;
+    }
+
+    .tag:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00ffff80;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>About Me</h1>
+    <p>
+      Hello! I'm <span class="highlight">Sahil</span>, a <span class="highlight">21-year-old Web Developer</span> with a B.Tech in
+      <span class="highlight">Computer Science and Engineering</span>. I design and develop modern, responsive, and stylish websites that make an impact.
+    </p>
+    <p>
+      From creative UIs to interactive applications, I love transforming digital ideas into beautiful web experiences.
+      My current toolkit includes HTML, CSS, JavaScript, and responsive design principles.
+    </p>
+    <p>
+      I'm always exploring new technologies and pushing my boundaries to grow as a full-stack developer.
+      Collaboration, creativity, and clean code are at the heart of everything I do.
+    </p>
+
+    <!-- Buttons -->
+    <div class="btn-group">
+      <a href="project.html" class="btn">See Projects</a>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills">
+      <h2>My Skillset</h2>
+      <div class="skill-tags">
+        <div class="tag">HTML5</div>
+        <div class="tag">CSS3</div>
+        <div class="tag">JavaScript</div>
+        <div class="tag">Responsive Design</div>
+        <div class="tag">Git & GitHub</div>
+        <div class="tag">UI/UX</div>
+        <div class="tag">Bootstrap</div>
+        <div class="tag">Web Hosting</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+

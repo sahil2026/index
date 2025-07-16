@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Sahil | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1b0035, #2e0b5b, #00172d);
+      background-size: 300% 300%;
+      animation: gradientMove 12s ease infinite;
+      color: #e8e8e8;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-bar li a {
+      color: #c0f7ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-bar li a:hover,
+    .nav-bar li a.active {
+      background: #00e6e6;
+      color: #0a0f24;
+      box-shadow: 0 0 12px #00e6e680;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 40px 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00d9ff;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px #00e6e6;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #00e6e6;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .project-card a {
+      color: #aeeffb;
+      text-decoration: underline;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Royal Quiz App</h3>
+        <p>An advanced JavaScript-based quiz game with 10 levels, increasing difficulty, sound effects, and a leaderboard.</p>
+        <a href="file:///C:/Users/Asus/OneDrive/New%20folder/new%20folder/quiz/q.html"><H4>VIEW APP</H4></a>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal responsive portfolio showcasing skills, projects, and contact information with a modern UI design.</p>
+        <a href="file:///C:/Users/Asus/OneDrive/New%20folder/new%20folder/index.html"><H4>VIEW LIVE</H4></a>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Fetches real-time weather data using a public API and displays current weather based on the user’s location.</p>
+        <a href="file:///C:/Users/Asus/OneDrive/New%20folder/weather.html"><H4>VIEW APP</H4></a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <h3>Todo List</h3>
+        <p>Simple task management web app built with HTML, CSS, and JavaScript. Supports add/edit/delete and local storage.</p>
+        <a href="file:///C:/Users/Asus/OneDrive/New%20folder/new%20folder/todo.htm"><h4>VIEW SITE</h4> </a>
+      </div>
+
+    </div>            
+  </div>
+
+</body>
+</html>

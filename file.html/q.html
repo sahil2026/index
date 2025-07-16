@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Quiz App</title>
+  <link rel="stylesheet" href="q.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Royal Quiz Challenge 👑</h1>
+    <div id="quiz-box">
+      <div id="level">Level: 1</div>
+      <div id="question">Loading...</div>
+      <div id="options"></div>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+    <div id="result" class="hidden"></div>
+  </div>
+  <audio id="correct-sound" src="correct-6033.mp3") preload="auto"></audio>
+  <audio id="wrong-sound" src ="wrong-answer-129254.mp3">preload="auto"></audio>
+<button id="start-btn">Start Quiz</button>
+  <audio id="levelup-sound" src="sounds/levelup.mp3" preload="auto"></audio>
+  <audio id="win-sound" src="sounds/win.mp3" preload="auto"></audio>
+  <script src="q.js"></script>
+</body>
+</html>
+
